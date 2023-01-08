@@ -55,5 +55,30 @@ namespace ExcerciseArrayList
             var reversed = new string(array);
             Console.WriteLine("Reversed name: " + reversed);
         }
+        public void Sort()
+        {
+            A: Console.WriteLine("Enter 5 numbers:");
+            var num = new int[5];
+
+           for(var i =0;i<5;i++)
+            {
+                num[i] = Convert.ToInt32(Console.ReadLine());
+                if (i >= 1)
+                {
+                    if (num[i] == num[0] && num[i] == num[1]|| num[i] == num[2] || num[i] == num[3])
+                    {
+                        Console.WriteLine("Erorr");
+                        Console.WriteLine("Please Retry");
+                        goto A;
+                    }
+                }
+            }
+            Array.Sort(num);
+           foreach (var number in num)
+            {
+                Console.WriteLine(number);
+            }
+          
+        }
     }
 }

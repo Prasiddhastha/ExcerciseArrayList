@@ -18,18 +18,18 @@ namespace ExcerciseArrayList
                 case 2:
                     excercise.ReverseName();
                     break;
-                //case 3:
-                //    ExcerciseExtended.GetFact();
-                //    break;
-                //case 4:
-                //    ExcerciseExtended.GuessRandom();
-                //    break;
-                //case 5:
-                //    ExcerciseExtended.GetMax();
-                //    break;
-                //default:
-                //    Console.WriteLine("Wrong input");
-                //    break;
+                case 3:
+                    excercise.Sort();
+                    break;
+                    //case 4:
+                    //    ExcerciseExtended.GuessRandom();
+                    //    break;
+                    //case 5:
+                    //    ExcerciseExtended.GetMax();
+                    //    break;
+                    //default:
+                    //    Console.WriteLine("Wrong input");
+                    //    break;
             }
         }
     }
