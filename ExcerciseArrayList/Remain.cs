@@ -11,31 +11,45 @@ namespace ExcerciseArrayList
     {
         public static void GetList()
         {
-            var k =0;
+            var k = 0;
             var num = new List<int>();
-            while(true)
+            while (true)
             {
                 Console.WriteLine("Enter a number or type Quit to exit");
                 var input = Console.ReadLine();
-                if(input == "Quit")
+                var index = num.IndexOf(Convert.ToInt32(input));
+
+                if (input == "Quit")
                 {
+
                     break;
                 }
-                num.Add(Convert.ToInt32(input));
-                var index = num.IndexOf(Convert.ToInt32(input));
                 
-                    if (num.Contains(Convert.ToInt32(input)))
-                    {
-                        var j = num.IndexOf(Convert.ToInt32(input));
-                        num.RemoveAt(index);
-                        num.RemoveAt(j);
-                    }
-            }
-            foreach(var number in num)
-            {
-                Console.WriteLine(number);
-            }
+                //    if (num.Contains(Convert.ToInt32(input)))
+                //    {
+                //        var j = num.IndexOf(Convert.ToInt32(input));
 
+                //        num.RemoveAt(j);
+                //        num.RemoveAt(index);
+                //    }
+
+
+
+
+
+                //    num.Add(Convert.ToInt32(input));
+
+
+
+
+                //}
+                //foreach(var number in num)
+                //{
+                //    Console.WriteLine(number);
+                //}
+
+            }
+            
         }
     }
 }
