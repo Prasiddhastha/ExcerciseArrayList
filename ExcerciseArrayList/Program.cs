@@ -24,9 +24,9 @@ namespace ExcerciseArrayList
                 case 4:
                     Remain.GetList();
                     break;
-                    //case 5:
-                    //    ExcerciseExtended.GetMax();
-                    //    break;
+                case 5:
+                    Remain.Last();
+                    break;
                     //default:
                     //    Console.WriteLine("Wrong input");
                     //    break;
