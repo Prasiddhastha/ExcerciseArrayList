@@ -9,6 +9,7 @@ namespace ExcerciseArrayList
 {
     public class Excercise
     {
+        //Qno1
         public void LikePost()
         { 
             var names = new List<string>();
@@ -40,6 +41,7 @@ namespace ExcerciseArrayList
 
             }
         }
+        //Qno2
         public void ReverseName()
         {
             
@@ -55,6 +57,7 @@ namespace ExcerciseArrayList
             var reversed = new string(array);
             Console.WriteLine("Reversed name: " + reversed);
         }
+        //Qno3
         public void Sort()
         {
             var num = new List<int>();

@@ -21,9 +21,9 @@ namespace ExcerciseArrayList
                 case 3:
                     excercise.Sort();
                     break;
-                    //case 4:
-                    //    ExcerciseExtended.GuessRandom();
-                    //    break;
+                case 4:
+                    Remain.GetList();
+                    break;
                     //case 5:
                     //    ExcerciseExtended.GetMax();
                     //    break;
