@@ -58,16 +58,41 @@ namespace ExcerciseArrayList
         public void Sort()
         {
             
-         
-            Console.WriteLine("Enter 5 numbers:");
             var num = new List<int>();
-            
+            var c = 5;
+             Console.WriteLine($"Enter 5 numbers:");
+            A: if(c<5)
+            {
+             Console.WriteLine($"Enter {c} numbers More:");
+            }
+            while (num.Count < 5)
+            {
+                
+                c--;
+                var input =Convert.ToInt32(Console.ReadLine());
+               if(num.Contains(input))
+                {
+                    Console.WriteLine("You've previously entered:\n " + input);
+                    Console.WriteLine("You have Entered these numbers:");
+                    foreach (var j in num)
+                    {
+                        Console.WriteLine(j);
+                    }
+                    c++;
+                    goto A;
+                }
+                num.Add(input);
+            }
+            num.Sort();
+            var i = String.Join(",", num);
+            Console.WriteLine("Sorted:");
             foreach (var number in num)
             {
-                number.AddRange(new[] { Convert.ToInt32(Console.ReadLine()) });
+                Console.WriteLine(i);
+                break;
             }
 
-
+           
         }
     }
 }
