@@ -57,7 +57,6 @@ namespace ExcerciseArrayList
         }
         public void Sort()
         {
-            
             var num = new List<int>();
             var c = 5;
              Console.WriteLine($"Enter 5 numbers:");
@@ -91,8 +90,6 @@ namespace ExcerciseArrayList
                 Console.WriteLine(i);
                 break;
             }
-
-           
         }
     }
 }
